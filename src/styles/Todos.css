@@ -1,0 +1,88 @@
+.Todos {
+  position: relative;
+  width: 90%;
+  min-height: 340px;
+  grid-area: listTodos;
+  background: url('../images/creatividad.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 5px 1px var(--gray);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 10px;
+  margin: 20px auto;
+
+  transform: translateX(50px);
+  animation: content 0.8s ease-in-out forwards;
+
+}
+
+.Todos__title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Balsamiq Sans', cursive;
+  color: var(--dark-blue);
+  border-bottom: 1px solid var(--light-blue);
+  margin-bottom: 20px;
+}
+
+.Todos__firstTodo {
+  width: 100%;
+  height: 150px;
+  display: grid;
+  place-content: center;
+}
+
+.Todos__firstTodo p {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--dark-blue);
+}
+
+@keyframes content {
+  0% {
+    transform: translateY(50px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media(min-width: 750px) {
+  .Todos {
+    position: relative;
+    max-height: 430px;
+    overflow-y: scroll;
+    margin: 0 auto 60px auto;
+
+    transform: translateX(50px);
+    animation: content 0.8s ease-in-out forwards;
+  }
+
+  @keyframes content {
+    0% {
+      transform: translateX(50px);
+    }
+
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  .Todos::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(90, 90, 90, 0.2);
+    border-radius: 30px;
+  }
+
+  .Todos::-webkit-scrollbar-thumb {
+    background-color: rgba(48, 48, 48, 0.2);
+    border-radius: 30px;
+  }
+
+  .Todos__title {
+    font-size: 3rem;
+  }
+}

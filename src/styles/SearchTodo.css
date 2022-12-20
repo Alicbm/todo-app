@@ -1,0 +1,30 @@
+.SearchTodo {
+  width: 90%;
+  height: 40px;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  color: var(--dark-blue);
+  background-color: var(--white);
+  border-radius: 20px;
+  border: 1px solid var(--gray);
+  padding: 0 15px;
+  outline: none;
+
+  transform: translateX(-50px);
+  animation: header 1s ease-in-out forwards;
+}
+
+.SearchTodo::placeholder {
+  font-size: 1.7rem;
+}
+
+.SearchTodo:hover {
+  border: 1px solid var(--dark-blue);
+}
+
+@media(min-width:750px) {
+  .SearchTodo {
+    transform: translateX(-150px);
+    animation: header 1s ease-in-out forwards;
+  }
+}

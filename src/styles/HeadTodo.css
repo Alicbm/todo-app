@@ -1,0 +1,123 @@
+.HeadTodo {
+  width: 100%;
+  height: 360px;
+  grid-area: headTodo;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: var(--dark-blue);
+  background-color: var(--light-blue);
+  padding-top: 40px;
+  margin-top: 50px;
+}
+
+.Header__text {
+  width: 100%;
+  min-width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Header__text-title {
+  width: 100%;
+  text-align: center;
+  font-size: 3.2rem;
+  font-family: 'Balsamiq Sans', cursive;
+  font-weight: bold;
+
+  transform: translateX(-50px);
+  animation: header 1s ease-in-out forwards;
+}
+
+.Header__text .Header__text-message,
+.Header__text-completed {
+  width: 70%;
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 0 auto;
+
+  transform: translateX(-50px);
+  animation: header 1s ease-in-out forwards;
+}
+
+.Header__text-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header__text-image .Header__text-image--img-sm {
+  width: 120px;
+  height: 120px;
+
+  transform: translateX(-50px);
+  animation: header 1s ease-in-out forwards;
+}
+
+.Header__text-image .Header__text-image--img-lg {
+  display: none;
+}
+
+@keyframes header {
+  0% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media(min-width:750px) {
+  .HeadTodo {
+    width: 100%;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 30px;
+    padding-top: 80px;
+    margin: 0;
+  }
+
+  .Header__text-title {
+    font-size: 4rem;
+    margin-bottom: 10px;
+
+    transform: translateX(-50px);
+    animation: header 1s ease-in-out forwards;
+
+  }
+
+  .Header__text .Header__text-message {
+    margin-bottom: 20px;
+
+    transform: translateX(-50px);
+    animation: header 1s ease-in-out forwards;
+  }
+
+  .Header__text-image--img-sm {
+    display: none;
+  }
+
+  .Header__text-image .Header__text-image--img-lg {
+    display: flex;
+    width: 230px;
+    height: 230px;
+    margin-bottom: 20px;
+
+    transform: translateX(-50px);
+    animation: header 1s ease-in-out forwards;
+  }
+
+  @keyframes header {
+    0% {
+      transform: translateX(-50px);
+    }
+
+    100% {
+      transform: translateX(0px);
+    }
+  }
+}
