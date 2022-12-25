@@ -13,10 +13,10 @@ export function Footer() {
           <p><a href="#">Who am I?</a></p>
         </li>
         <li>
-          <p><a href="#"><BsLinkedin className='Footer__list-icon' />Linkedin</a></p>
+          <p><a href="https://linkedin.com/in/alic-barandica" target='__blank'><BsLinkedin className='Footer__list-icon' />Linkedin</a></p>
         </li>
         <li>
-          <p><a href="#"><BsGithub className='Footer__list-icon' />GitHub</a></p>
+          <p><a href="https://github.com/Alicbm/todo-app" target='__blank'><BsGithub className='Footer__list-icon' />GitHub</a></p>
         </li>
       </ul>
       <div className="Footer__logo">
