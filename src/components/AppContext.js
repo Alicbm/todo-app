@@ -1,5 +1,4 @@
 import React from "react";
-import { SearchTodo } from "./SearchTodo";
 
 export const AppContext = React.createContext();
 
