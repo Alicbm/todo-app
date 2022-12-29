@@ -10,13 +10,13 @@ export function Footer() {
       <ul className="Footer__list">
         <li>
           <span><BsPersonCircle className='Footer__list-icon' /></span>
-          <p><a href="https://alicbm.github.io/alicbarandica.github.io/" target='_blank'>Who am I?</a></p>
+          <p><a href="https://alicbm.github.io/alicbarandica.github.io/" target='_blank' rel="noopener noreferrer">Who am I?</a></p>
         </li>
         <li>
-          <p><a href="https://linkedin.com/in/alic-barandica" target='_blank'><BsLinkedin className='Footer__list-icon' />Linkedin</a></p>
+          <p><a href="https://linkedin.com/in/alic-barandica" target='_blank' rel="noopener noreferrer"><BsLinkedin className='Footer__list-icon' />Linkedin</a></p>
         </li>
         <li>
-          <p><a href="https://github.com/Alicbm/todo-app" target='_blank'><BsGithub className='Footer__list-icon' />GitHub</a></p>
+          <p><a href="https://github.com/Alicbm/todo-app" target='_blank' rel="noopener noreferrer"><BsGithub className='Footer__list-icon' />GitHub</a></p>
         </li>
       </ul>
       <div className="Footer__logo">
