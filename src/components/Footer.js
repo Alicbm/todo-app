@@ -10,7 +10,7 @@ export function Footer() {
       <ul className="Footer__list">
         <li>
           <span><BsPersonCircle className='Footer__list-icon' /></span>
-          <p><a href="https://alicbm.github.io/alicbarandica.github.io/" target='_blank' rel="noopener noreferrer">Who am I?</a></p>
+          <p><a href="https://portfolio-alicbm.vercel.app/" target='_blank' rel="noopener noreferrer">Who am I?</a></p>
         </li>
         <li>
           <p><a href="https://linkedin.com/in/alic-barandica" target='_blank' rel="noopener noreferrer"><BsLinkedin className='Footer__list-icon' />Linkedin</a></p>
